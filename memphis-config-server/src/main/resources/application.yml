@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: memphis-config-server
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/rzdp/memphis.git
+          search-paths:
+            - memphis-config/memphis-account/
+            - memphis-config/memphis-organization
+  profiles:
+    active: default
+server:
+  port: 8888

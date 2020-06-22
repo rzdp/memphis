@@ -1,11 +1,6 @@
 spring:
   application:
     name: memphis-account
-  datasource:
-    url: jdbc:sqlserver://localhost;databaseName=MemphisAccountDevDB
-    username: 'agentmemphis'
-    password: '@g3ntm3mph!s'
-    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
   jpa:
     show-sql: true
     open-in-view: false

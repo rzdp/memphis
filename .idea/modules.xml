@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/memphis.iml" filepath="$PROJECT_DIR$/.idea/memphis.iml" />
       <module fileurl="file://$PROJECT_DIR$/memphis-account/memphis-account.iml" filepath="$PROJECT_DIR$/memphis-account/memphis-account.iml" />
+      <module fileurl="file://$PROJECT_DIR$/memphis-config-server/memphis-config-server.iml" filepath="$PROJECT_DIR$/memphis-config-server/memphis-config-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/memphis-organization/memphis-organization.iml" filepath="$PROJECT_DIR$/memphis-organization/memphis-organization.iml" />
     </modules>
   </component>

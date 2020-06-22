@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/memphis-account" />
     <file type="web" url="file://$PROJECT_DIR$/memphis-billing" />
+    <file type="web" url="file://$PROJECT_DIR$/memphis-config-server" />
     <file type="web" url="file://$PROJECT_DIR$/memphis-organization" />
   </component>
   <component name="JavaScriptSettings">
@@ -13,6 +14,7 @@
       <list>
         <option value="$PROJECT_DIR$/memphis-organization/pom.xml" />
         <option value="$PROJECT_DIR$/memphis-account/pom.xml" />
+        <option value="$PROJECT_DIR$/memphis-config-server/pom.xml" />
       </list>
     </option>
   </component>
