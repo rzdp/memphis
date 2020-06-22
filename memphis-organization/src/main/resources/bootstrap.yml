@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: memphis-organization
+server:
+  port: 8000
+logging:
+  level:
+    com.rzdp.memphis.organization: DEBUG
