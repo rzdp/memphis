@@ -7,3 +7,6 @@ spring:
       dialect: org.hibernate.dialect.SQLServer2012Dialect
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+logging:
+  level:
+    com.rzdp.memphis.organization: INFO

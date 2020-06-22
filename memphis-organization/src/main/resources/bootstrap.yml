@@ -8,8 +8,5 @@ spring:
     active: dev
 server:
   port: 8000
-logging:
-  level:
-    com.rzdp.memphis.organization: DEBUG
 encrypt:
   key: ${ENCRYPT_KEY}

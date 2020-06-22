@@ -1,8 +1,9 @@
 spring:
-  application:
-    name: memphis-account
   datasource:
     url: jdbc:sqlserver://localhost;databaseName=MemphisAccountProdDB
     username: 'agentmemphis'
       password: '{cipher}7528b9f74347480ea7e1070a865584de3e5353d51291e56f9f9a1631fdb0ce5e'
     driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+logging:
+  level:
+    com.rzdp.memphis.account: INFO

@@ -5,7 +5,7 @@ spring:
     config:
       server:
         encrypt:
-          enabled: true
+          enabled: false
         git:
           uri: https://github.com/rzdp/memphis.git
           search-paths:
