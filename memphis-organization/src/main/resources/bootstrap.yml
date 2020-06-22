@@ -11,3 +11,5 @@ server:
 logging:
   level:
     com.rzdp.memphis.organization: DEBUG
+encrypt:
+  key: ${ENCRYPT_KEY}
