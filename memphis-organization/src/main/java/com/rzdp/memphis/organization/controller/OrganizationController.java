@@ -7,7 +7,6 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -27,5 +26,12 @@ public class OrganizationController {
             @PathVariable("id") Long organizationId) {
         return new ResponseEntity<>(organizationService
                 .getOrganizationById(organizationId), HttpStatus.OK);
+    }
+
+    @GetMapping("/v1/organizations/{id}/exists")
+    public ResponseEntity<Boolean> existOrganizationById(
+            @PathVariable("id") Long organizationId) {
+        return new ResponseEntity<>(organizationService.
+                existOrganizationById(organizationId), HttpStatus.OK);
     }
 }

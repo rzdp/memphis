@@ -22,7 +22,7 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public AccountDto getAccountByOrganizationId(String organizationId) {
-        return modelMapper.map(getAccountByOrganizationId.execute(organizationId),
-                AccountDto.class);
+        return modelMapper.map(getAccountByOrganizationId
+                .execute(organizationId), AccountDto.class);
     }
 }

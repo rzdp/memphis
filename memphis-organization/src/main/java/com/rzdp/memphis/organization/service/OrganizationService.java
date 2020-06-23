@@ -7,4 +7,6 @@ public interface OrganizationService {
     OrganizationDto getOrganizationById(Long organizationId);
 
     OrganizationDto getOrganizationByName(String name);
+
+    boolean existOrganizationById(Long organizationId);
 }
