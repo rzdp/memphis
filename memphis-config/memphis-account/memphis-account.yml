@@ -10,10 +10,4 @@ spring:
 logging:
   level:
     com.rzdp.memphis.account: INFO
-
-management:
-  endpoints:
-    web:
-      exposure:
-        include:
-        - hystrix.stream
+    
