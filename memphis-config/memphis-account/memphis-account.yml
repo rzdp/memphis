@@ -13,6 +13,7 @@ logging:
 
 management:
   endpoints:
-  web:
-    exposure:
-      include: hystrix.stream
+    web:
+      exposure:
+        include:
+        - hystrix.stream
