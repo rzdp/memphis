@@ -1,7 +1,6 @@
 package com.rzdp.memphis.account.controller;
 
 import com.rzdp.memphis.account.dto.AccountDto;
-import com.rzdp.memphis.account.exception.AccountNotFoundException;
 import com.rzdp.memphis.account.exception.OrganizationNotFoundException;
 import com.rzdp.memphis.account.service.AccountService;
 import com.rzdp.memphis.account.service.OrganizationService;
@@ -35,8 +34,8 @@ public class AccountController {
         boolean exists = organizationService.existsByOrganizationId(organizationId);
 
         if (!exists) {
-            throw new OrganizationNotFoundException("Organization not found. " +
-                    "Organization ID=" + organizationId);
+            throw new OrganizationNotFoundException("Unable to get organization. " +
+                    "OrganizationID=" + organizationId);
         }
 
         String fullOrganizationId = OrganizationUtil.convertToFullOrganizationId(organizationId);

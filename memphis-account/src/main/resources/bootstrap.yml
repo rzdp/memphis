@@ -10,3 +10,4 @@ server:
   port: 8001
 encrypt:
   key: ${ENCRYPT_KEY}
+

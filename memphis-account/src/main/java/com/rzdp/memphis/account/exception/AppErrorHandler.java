@@ -32,8 +32,14 @@ public class AppErrorHandler extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(AccountNotFoundException.class)
-    public ResponseEntity<Object> handleOrganizationNotFoundException(
+    public ResponseEntity<Object> handleAccountNotFoundException(
             AccountNotFoundException ex, WebRequest request) {
+        return buildErrorResponse(ex, HttpStatus.NOT_FOUND, request);
+    }
+
+    @ExceptionHandler(OrganizationNotFoundException.class)
+    public ResponseEntity<Object> handleOrganizationNotFoundException(
+            OrganizationNotFoundException ex, WebRequest request) {
         return buildErrorResponse(ex, HttpStatus.NOT_FOUND, request);
     }
 

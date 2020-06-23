@@ -1,5 +1,6 @@
 package com.rzdp.memphis.account.service.impl;
 
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import com.rzdp.memphis.account.dto.AccountDto;
 import com.rzdp.memphis.account.service.AccountService;
 import com.rzdp.memphis.account.service.GetAccountByOrganizationId;
@@ -21,8 +22,13 @@ public class AccountServiceImpl implements AccountService {
     }
 
     @Override
+    @HystrixCommand(fallbackMethod = "getDefaultAccount")
     public AccountDto getAccountByOrganizationId(String organizationId) {
-        return modelMapper.map(getAccountByOrganizationId
+       return modelMapper.map(getAccountByOrganizationId
                 .execute(organizationId), AccountDto.class);
+    }
+
+    private AccountDto getDefaultAccount(String organizationId) {
+        return new AccountDto();
     }
 }
